@@ -5,12 +5,12 @@
 class Govm < Formula
   desc "GoVM - Go Version Manager"
   homepage "https://github.com/melkeydev/govm"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
-    url "https://github.com/Melkeydev/govm/releases/download/v0.0.1/govm_0.0.1_Darwin_all.tar.gz"
-    sha256 "3db02e639a5fe767441ee4b236ce32857b5e6331f74fd6ac0eb1e70a5a3f494a"
+    url "https://github.com/Melkeydev/govm/releases/download/v0.0.2/govm_0.0.2_Darwin_all.tar.gz"
+    sha256 "7e1c995e7064869894e08a1bddf2dc85dc3131b1c4f10bc020aa43a8ca73e4e8"
 
     def install
       bin.install "govm"
@@ -20,8 +20,8 @@ class Govm < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Melkeydev/govm/releases/download/v0.0.1/govm_0.0.1_Linux_x86_64.tar.gz"
-        sha256 "35b84282568b5787d13ddb296d069baa13e75341804de8e80ea4427d7051ccb4"
+        url "https://github.com/Melkeydev/govm/releases/download/v0.0.2/govm_0.0.2_Linux_x86_64.tar.gz"
+        sha256 "c39ac5cbfacbdd1ebcf821752e054a4cdc99fc76ec8271f7d0006acbe551fa9f"
 
         def install
           bin.install "govm"
@@ -30,8 +30,8 @@ class Govm < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Melkeydev/govm/releases/download/v0.0.1/govm_0.0.1_Linux_arm64.tar.gz"
-        sha256 "a3a85a4f25ae00674ba975c79f1c9756e2845210ac9d9e13ca0cabcad300b046"
+        url "https://github.com/Melkeydev/govm/releases/download/v0.0.2/govm_0.0.2_Linux_arm64.tar.gz"
+        sha256 "da0289b0fa19d888181f8644c5bae20e5c2eb6cf783805fde52e635d7381601e"
 
         def install
           bin.install "govm"
